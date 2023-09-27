@@ -1,15 +1,15 @@
 
 package jm.task.core.jdbc.model;
 
+
 import javax.persistence.*;
 
-//Это Entity класс
 @Entity
 @Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column (name = "id")
     private Long id;
 
     @Column(name = "user_name")
@@ -19,7 +19,7 @@ public class User {
     private String lastName;
 
     @Column(name = "user_age")
-    private Byte age;
+    private byte age;
 
     public User() {
     }
@@ -69,6 +69,6 @@ public class User {
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
-                '}'+"\n";
+                '}' + "\n";
     }
 }
