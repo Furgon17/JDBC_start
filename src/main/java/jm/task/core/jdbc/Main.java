@@ -12,13 +12,14 @@ public class Main {
     public static void main(String[] args) {
         //Через Hibernate
         UserServiceHibernateImpl userServiceHibernate = new UserServiceHibernateImpl();
+//        userServiceHibernate.createUsersTable(); //cоздание таблицы
 //        userServiceHibernate.dropUsersTable(); //Удаление таблицы
-//        userServiceHibernate.createUsersTable(); //Создание таблицы
+//        userServiceHibernate.saveUser("Igor", "Provkin", (byte)54);
 
 //        userServiceHibernate.saveUser("Misha", "Petrov", (byte) 34); //добавление пользователя
-        userServiceHibernate.removeUserById(1); //удаляем пользователя по id
-//        userServiceHibernate.getAllUsers();
+//        userServiceHibernate.removeUserById(1); //удаляем пользователя по id
 //        userServiceHibernate.cleanUsersTable();
+//        System.out.println(userServiceHibernate.getAllUsers());
 
 
         // Через  JDBC
